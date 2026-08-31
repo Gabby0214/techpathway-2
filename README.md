@@ -77,21 +77,6 @@ This project is deployed to AWS using Terraform, Docker, Amazon ECR, Amazon ECS 
 
 Configure the AWS CLI with credentials that have permission to create and manage the required AWS resources.
 
-```bash
+ bash
 aws configure
 
-### What to do
-
-**Do NOT delete your original README.**
-
-You only need to go to the **very bottom** of what you already have and paste **everything below**:
-
-```markdown
-### 2. Build the Docker Images
-
-```bash
-cd backend
-docker build --platform linux/amd64 -t techpathway-backend .
-
-cd ../frontend
-docker build --platform linux/amd64 -t techpathway-frontend .
