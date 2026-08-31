@@ -57,3 +57,41 @@ A few examples of extras for this coding challenge:
 4. Running the application in a serverless environment
 
 This is not an exhaustive list of extra features that could be added to this code challenge. At the end of the day, this section is for you to demonstrate any skills you want to show that’s not captured in the core requirement.
+
+
+# AWS Deployment
+
+This project is deployed to AWS using Terraform, Docker, Amazon ECR, Amazon ECS Fargate, an Application Load Balancer, and Amazon CloudWatch.
+
+## Tools Required
+
+- AWS CLI
+- Terraform
+- Docker
+- Node.js and npm
+- An AWS account with permissions to create the required AWS resources
+
+## Deployment Steps
+
+### 1. Configure AWS CLI
+
+Configure the AWS CLI with credentials that have permission to create and manage the required AWS resources.
+
+```bash
+aws configure
+
+### What to do
+
+**Do NOT delete your original README.**
+
+You only need to go to the **very bottom** of what you already have and paste **everything below**:
+
+```markdown
+### 2. Build the Docker Images
+
+```bash
+cd backend
+docker build --platform linux/amd64 -t techpathway-backend .
+
+cd ../frontend
+docker build --platform linux/amd64 -t techpathway-frontend .

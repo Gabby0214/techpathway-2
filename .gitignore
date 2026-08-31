@@ -1,1 +1,9 @@
+node_modules/.terraform/
+
+# Dependencies
 node_modules/
+
+# Terraform generated files
+terraform/.terraform/
+terraform/*.tfstate
+terraform/*.tfstate.*
